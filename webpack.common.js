@@ -12,7 +12,8 @@ module.exports = {
         new CleanWebpackPlugin(),
         new HtmlWebpackPlugin({
             title: 'Hyaline Water Corporation',
-            favicon: "./src/assets/hwc.jpg"
+            favicon: "./src/assets/hwc.jpg",
+            template: 'index.html'
         })
     ],
     output: {
