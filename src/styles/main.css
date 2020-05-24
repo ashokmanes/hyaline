@@ -19,6 +19,7 @@ header .logo{
     height: 150px;
     top: 30px;
     left: 25px;
+    cursor: pointer;
 }
 .container{
      padding: 20px 0;
@@ -27,10 +28,10 @@ header .logo{
     width:100%;
 }
 
-#clients div{
+div.subclient{
     text-align: center;
 }
-#clients div h2{
+div.subclient h2{
     border-bottom: 2px solid;
     margin:0;
     display:inline-block;
@@ -379,6 +380,17 @@ footer .flex{
     width:100%;
 }
 
+.copyright{
+    text-align: center;
+}
+
+#services::before, #clients::before, #about::before,#contact::before { 
+  content: "";
+  display: block;
+  height: 97px; 
+  margin: -97px 0 0 0; 
+}
+
 
 
 
@@ -514,6 +526,10 @@ Carousel*/
         margin:0;
         transform:translateX(120%);
         transition: transform 0.4s ease;
+    }
+    .info-text{
+        padding: 10px 20px;
+        width: 90%;
     }
     nav .brand-name{
             font-size: 13px;
