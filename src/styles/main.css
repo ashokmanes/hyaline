@@ -507,11 +507,8 @@ Carousel*/
         transform:translateX(120%);
         transition: transform 0.4s ease;
     }
-    nav{
-        /* flex-direction: row-reverse; */
-    }
     nav .brand-name{
-            font-size: 15px;
+            font-size: 13px;
     }
     .nav-ul.show{
         display: flex;
@@ -547,10 +544,10 @@ Carousel*/
     }
 
     header .logo{
-        width:80px;
-        height:80px;
+        width:75px;
+        height:75px;
         top: 21px;
-        left: 20px;
+        left: 15px;
     }
 
 
