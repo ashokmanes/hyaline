@@ -490,7 +490,15 @@ Carousel*/
 
 
 
+@media screen and (max-width:1308px){
 
+    nav .brand-name{
+            font-size: 35px;
+    }
+    nav{
+        justify-content: center;
+    }
+}
 
 /*media */
 
