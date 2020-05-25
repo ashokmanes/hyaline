@@ -1,10 +1,4 @@
 import './style.css';
-import './styles/main.css';
-import main from "./main/main.html";
-
-
-document.body.innerHTML += main;
-
 
 window.addEventListener('DOMContentLoaded', (event) => {
     const hamburgerMenu = document.querySelector("#hamburger");

@@ -1,10 +1,12 @@
 const path = require('path');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
     entry: {
-        app: './src/index.js'
+        app: './src/index.js',
+
 
     },
     plugins: [
@@ -14,7 +16,8 @@ module.exports = {
             title: 'Hyaline Water Corporation',
             favicon: "./src/assets/hwc.jpg",
             template: 'index.html'
-        })
+        }),
+        new MiniCssExtractPlugin()
     ],
     output: {
         filename: '[name].bundle.js',
@@ -30,7 +33,7 @@ module.exports = {
             {
                 test: /\.css$/,  //for css
                 use: [
-                    'style-loader',
+                    MiniCssExtractPlugin.loader,
                     'css-loader',
                 ],
             },
